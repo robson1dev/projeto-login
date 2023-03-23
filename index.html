@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Projeto Login</title>
+</head>
+<body>
+    <main>
+        <section id="img">
+            <img src="imgs/entrada.jpg" alt="imagem">
+        </section>
+
+        <section id="container">
+            <h1>Login</h1>
+            <p>Bem vindo ao novo portal, entre em contato para mais informações.</p>
+
+            <form action="cadastro.php" method="get" autocomplete="on">
+
+                <p id="usuario">
+                    <span class="material-symbols-outlined" id="icon">
+                        person
+                        </span>
+                    <input type="text" name="user" id="iuser" placeholder="seu e-mail" minlength="8" maxlength="15" required>
+                </p>
+
+                <p id="senha">
+                    <span class="material-symbols-outlined" id="icon">
+                        vpn_key
+                        </span>
+                    <input type="password" name="senha" id="isen" placeholder="sua senha" required minlength="8" maxlength="15">
+                </p>
+
+                <p >
+                    <button id="entrar">
+                        ENTRAR
+                    </button>
+                </p>
+                <p>
+                    <button id="esqueci">
+                        ESQUECI A SENHA
+                    </button>
+                </p>
+        </section>
+
+
+        </form>
+
+
+    </main>
+</body>
+</html>
