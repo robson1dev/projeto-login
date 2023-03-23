@@ -14,7 +14,7 @@ body{
 
 main{
     background-color: #fff;
-    width: 350px;
+    width: 300px;
 
     margin-top: 20px;
     margin: 30px auto;
@@ -47,7 +47,6 @@ p#usuario{
 p#senha{
     background-color: #6b2d2d;
     border-radius: 5px;
-    
     
 }
 
