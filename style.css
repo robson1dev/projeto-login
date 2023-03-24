@@ -40,3 +40,15 @@ div#imagem{
     height: 200px;
     
 }
+
+div#form{
+    padding: 10px;
+}
+
+div#form > h1{
+    text-align: center;
+}
+
+div#form p{
+    text-align: justify;
+}
