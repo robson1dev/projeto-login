@@ -1,54 +1,186 @@
 @charset "UTF-8";
 
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 html, body{
-    
     width: 100vw;
     height: 100vh;
-    background-color: #4d1616;
+    background-color: #642525;
 }
 
 main{
-    position: relative;
+    
     width: 100vw;
     height: 100vh;
-}
 
-#container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    background-color: #fff;
-    height: 500px;
-    width: 270px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-div#imagem{
-    background: #800000 url(imgs/entrada.jpg) no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
-div#form{
+section{
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: #704c4c;
+
+   
+    overflow: hidden;
+    box-shadow: 0px 0px 6px black;
+    transition: all 1s;
+   
+    
+}
+
+div#img{
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    background: url(imgs/entrada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+div{
+    display: block;
+}
+
+div#conteudo{
     padding: 10px;
 }
 
-div#form > h1{
+h1{
     text-align: center;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #c9c9c993;
 }
 
-div#form p{
-    text-align: justify;
+p{
+    margin-bottom: 5px;
+}
+div#conteudo p#lorem{
+    font-size: .8em;
+    color: #e2e2e2ce;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form > p#input{
+    background-color: #642525;
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#icon{
+    color: #fff;
+    padding-right: 1px;
+    cursor: pointer;
+}
+
+p > input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #b4b3b3;
+    outline: none;
+}
+
+#input{
+    background-color: #642525;
+    border: 2px solid #642525;
+    
+}
+
+p#entrar button{
+    background-color: #642525;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+p#esqueci button{
+    background-color: #6425257a;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+p#entrar button:hover{
+    background-color: #6d1a1a;
+}
+
+p#esqueci button:hover{
+    background-color: #642525;
+
+}
+
+
+@media screen and (min-width: 700px){
+
+    body{
+        background-image: linear-gradient(136deg, #642525, #000000);
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    section#container{
+
+        width: 70%;
+        height: 400px;
+        display: flex;
+
+    }
+
+
+    div#img{
+
+        height: 100%;
+        width: 90%;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+
+    section#container{
+        height: 450px;
+        display: flex;
+        flex-direction: row-reverse;
+
+}
+
+    div#img{
+
+        height: 100%;
+        width: 90%;
+        background-size: cover;
+        background-position: center center;
+
+        }
 }
